@@ -1,0 +1,28 @@
+{
+  "name": "andrew-lexas-starter",
+  "version": "1.0.0",
+  "description": "a starter for next and lexas with responsive header",
+  "main": "index.js",
+  "author": "Andrew Embury",
+  "license": "ISC",
+  "dependencies": {
+    "graphql": "^15.5.0",
+    "graphql-request": "^3.4.0",
+    "moment": "^2.29.1",
+    "next": "^10.0.9",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-feather": "^2.0.9",
+    "react-markdown": "^5.0.3",
+    "react-moment": "^1.1.1",
+    "styled-components": "latest"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "devDependencies": {
+    "babel-plugin-styled-components": "latest"
+  }
+}
