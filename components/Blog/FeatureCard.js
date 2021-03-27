@@ -13,6 +13,7 @@ const CardWrapper = styled.div`
 const Title = styled.h2`
   font-size: 1.5rem;
   font-weight: 700;
+  padding: 1rem 0;
 `;
 const LinkWrapper = styled.div`
   display: flex;

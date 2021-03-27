@@ -3,6 +3,7 @@ import { request } from '../utils/lexacms';
 import GridContainer from '../components/Layout/GridContainer';
 import BlogCard from '../components/Blog/BlogCard';
 import FeatureCard from '../components/Blog/FeatureCard';
+import SignUpBar from '../components/Forms/SignUpBar';
 
 const FeaturedPost = ({ posts }) => {
   return <FeatureCard post={posts.items[0]} />;
@@ -22,6 +23,7 @@ const NewPosts = ({ posts }) => {
 const HomePage = ({ blogPosts }) => {
   return (
     <>
+      <SignUpBar />
       <FeaturedPost posts={blogPosts} />
       <NewPosts posts={blogPosts} />
     </>

@@ -73,10 +73,14 @@ a {
   html{
       //Colors figure out theming??
     --text-color:black;
-    --primary-color:blue;
+    --primary-color:black;
+    --primary-light:grey;
     --background-color:#fff;
     --dark-background:grey;
     --light-background:lightgrey;
+    --black-color:black;
+    --white-color:#fff;
+    --offwhite-color:offwhite;
   
     --ipad-break: 769px;
 

@@ -5,4 +5,5 @@ export const navigationLinks = {
 
 export const mediaQueries = {
   ipad: '769px',
+  medium: '930px',
 };
