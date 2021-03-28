@@ -6,16 +6,18 @@
   "author": "Andrew Embury",
   "license": "ISC",
   "dependencies": {
+    "axios": "^0.21.1",
     "graphql": "^15.5.0",
     "graphql-request": "^3.4.0",
-    "kwesforms": "^2.0.16",
     "moment": "^2.29.1",
     "next": "^10.0.9",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-feather": "^2.0.9",
+    "react-hook-form": "^6.15.5",
     "react-markdown": "^5.0.3",
     "react-moment": "^1.1.1",
+    "sib-api-v3-sdk": "^8.2.0",
     "styled-components": "latest"
   },
   "scripts": {

@@ -20,10 +20,15 @@ const STYLES = {
   },
 };
 
-const IconInput = ({ label, icon, width = 300, size, ...delegated }) => {
+const IconInput = ({
+  label,
+  icon,
+  width = 300,
+  size,
+  formRef,
+  ...delegated
+}) => {
   const styles = STYLES[size];
-
-  // TODO: validate size
   if (!size) {
     throw new Error('No Size Entered');
   }
@@ -41,6 +46,7 @@ const IconInput = ({ label, icon, width = 300, size, ...delegated }) => {
           '--border-thickness': styles.borderThickness + 'px',
           '--font-size': styles.fontSize / 16 + 'rem',
         }}
+        ref={formRef}
       />
     </Wrapper>
   );
@@ -55,7 +61,7 @@ const Wrapper = styled.label`
   }
 
   @media (max-width: ${mediaQueries.medium}) {
-    padding: 2rem;
+    padding: 1.5rem;
   }
 `;
 
