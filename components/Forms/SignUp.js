@@ -1,4 +1,5 @@
 import { useForm } from 'react-hook-form';
+import { useRouter } from 'next/router';
 import IconInput from '../Forms/IconInput';
 import styled from 'styled-components';
 import Button from '../Button';
@@ -45,9 +46,13 @@ const SignUpForm = () => {
   const { register, handleSubmit, errors } = useForm();
   //empty callback for errors to display
   const handleErrors = (errors) => {};
+  //router for redirect to thanks you page
+  const router = useRouter();
 
   const onSubmit = async (data, e) => {
+    e.preventDefault();
     e.target.reset();
+    router.push('/thanks');
     await axios.post('/api/submitContact', data);
   };
 

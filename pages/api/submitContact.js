@@ -8,6 +8,7 @@ export default async function handler(req, res) {
   }
   try {
     const submittedContact = await submitContact(newContact);
+    //const submittedContact = await console.log(newContact);
     return res.status(200).json(submittedContact);
   } catch (err) {
     console.error(err);
