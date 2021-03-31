@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 import Link from 'next/link';
-import { navigationLinks } from '../../config/configuration';
 
 const Wrapper = styled.nav`
   height: 100%;
